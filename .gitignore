@@ -1,0 +1,10 @@
+src/*
+!src/.gitkeep
+
+selinux/*
+!selinux/*.example
+
+build/*
+
+wineprefix/*
+!wineprefix/.gitkeep

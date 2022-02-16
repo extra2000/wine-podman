@@ -1,0 +1,9 @@
+(block wine_podman
+    (blockinherit container)
+    (allow process fusefs_t ( dir ( map )))
+    (allow process xserver_t ( unix_stream_socket ( connectto )))
+    (allow process dri_device_t ( chr_file ( getattr ioctl map open read write )))
+    (allow process http_port_t ( tcp_socket ( name_connect )))
+    (allow process ipp_port_t ( tcp_socket ( name_connect )))
+    (allow process pulseaudio_port_t ( tcp_socket ( name_connect )))
+)
